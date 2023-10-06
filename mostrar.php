@@ -18,11 +18,11 @@ session_destroy();
                 <tr>
                     <th>Id</th>
                     <th>Nombre</th>
-                    <th></th>
-                    <th>Genero</th>
-                    <th>Autor</th>
-                    <th>Año</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Sexualidad</th>
                     <th>Pais</th>
+                    <th>Personaje</th>
                     <th>Imagen</th>
                 </tr>
             </thead>
@@ -36,12 +36,12 @@ session_destroy();
                     ?>
                             <tr>
                                 <td> <?php echo $row['id']; ?> </td>
-                                <td> <?php echo $row['edit']; ?> </td>
-                                <td> <?php echo $row['pers']; ?> </td>
-                                <td> <?php echo $row['gen']; ?> </td>
-                                <td> <?php echo $row['autor']; ?> </td>
-                                <td> <?php echo $row['año']; ?> </td>
+                                <td> <?php echo $row['nombre']; ?> </td>
+                                <td> <?php echo $row['apellido']; ?> </td>
+                                <td> <?php echo $row['edad']; ?> </td>
+                                <td> <?php echo $row['sexualidad']; ?> </td>
                                 <td> <?php echo $row['pais']; ?> </td>
+                                <td> <?php echo $row['personaje']; ?> </td>
 
                                 <td> <img height="50px" src="data:image/jpg;base64,<?php echo base64_encode ($row ['Imagen'])?> "></td>
                             </tr>
